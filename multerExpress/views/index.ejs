@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form method="post" action="/formsub" enctype="multipart/form-data">
+      <input type="text" placeholder="filename" name="description" />
+      <input type="file" name="meme" />
+      <input type="submit" value="submit" />
+    </form>
+    <form method="post" action="/formsubarray" enctype="multipart/form-data">
+      <input type="text" placeholder="filename" name="description" />
+      <input type="file" name="meme2" />
+      <input type="file" name="meme2" />
+      <input type="submit" value="submit" />
+    </form>
+    <form method="post" action="/formsubfields" enctype="multipart/form-data">
+      <input type="text" placeholder="filename" name="description" />
+      <input type="file" name="meme3" />
+      <input type="file" name="meme4" />
+      <input type="file" name="meme4" />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
